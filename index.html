@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick Tao - Neon Battleground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="scroll-up" class="scroll-btn neon-btn">↑</button>
+    <button id="scroll-down" class="scroll-btn neon-btn">↓</button>
+
+    <section class="hero">
+        <h1 class="neon-text">Tick Tao</h1>
+        <p class="neon-subtext">Enter the Neon Arena. Buy Your Ticket. Dominate.</p>
+        <button class="cta-btn neon-btn" onclick="scrollToSection('ticket-section')">Join Now</button>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="neon-text">The Game</h2>
+        <p>A high-stakes multiplayer showdown where strategy meets speed. Only the bold survive.</p>
+    </section>
+
+    <section class="ticket-section" id="ticket-section">
+        <h2 class="neon-text">Secure Your Spot</h2>
+        <button id="buy-ticket-btn" class="cta-btn neon-btn">Buy Ticket ($5)</button>
+        <!-- <p id="ticket-count">Tickets Left: <span id="remaining">50</span></p> -->
+    </section>
+
+    <footer>
+        <p>© 2025 Tick Tao. Powered by Neon Dreams.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

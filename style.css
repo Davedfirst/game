@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #0D0D0D;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+  animation: bgPulse 10s infinite;
+}
+
+@keyframes bgPulse {
+  0% { background: #0D0D0D; }
+  50% { background: #1A1A2E; }
+  100% { background: #0D0D0D; }
+}
+
+/* Neon Effects */
+.neon-text {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 5px #FF00FF, 0 0 10px #00FFFF, 0 0 20px #FF00FF, 0 0 40px #00FFFF;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.neon-subtext {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0 0 5px #FF00FF, 0 0 10px #00FFFF;
+}
+
+.neon-btn {
+  background: none;
+  border: 2px solid #FF00FF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-shadow: 0 0 5px #FF00FF;
+  box-shadow: 0 0 10px #FF00FF, 0 0 20px #00FFFF;
+  transition: all 0.3s;
+}
+
+.neon-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #FF00FF, 0 0 40px #00FFFF;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+}
+
+#scroll-up { top: 20px; right: 20px; }
+#scroll-down { bottom: 20px; right: 20px; }
+
+/* Sections */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.ticket-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#ticket-count {
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px #00FFFF;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Flicker Animation */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.7; }
+}
